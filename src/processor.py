@@ -123,7 +123,7 @@ class DataProcessor:
             start_time_task = datetime.now()
             print("-"*50)
             print(f"{datetime.now()} Start date: {start_date} - End date: {end_date}")
-            result = self.run_process_dates(self.process_id, start_date, end_date)
+            result = self._run_process_dates(self.process_id, start_date, end_date)
             result_list.append(result)
             print(f"{datetime.now()} Result: {result}")
             end_time_task = datetime.now()
