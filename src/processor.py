@@ -105,7 +105,7 @@ class DataProcessor:
         else:
             raise ValueError("Interval not supported")
 
-    def run_full_process(self):
+    def run_process(self):
         """
         Run a process with a start and end date and return the result for each interval between start_date and end_date
         Args:
@@ -143,4 +143,4 @@ if __name__=='__main__':
         interval="month"
         )
     
-    process_results = processor.run_full_process()
+    process_results = processor.run_process()
