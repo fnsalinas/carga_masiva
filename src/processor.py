@@ -14,6 +14,14 @@ dotenv.load_dotenv()
 class DataProcessor:
     
     def __init__(self, process_id: int, start_global_date: str, end_global_date: str, interval: str = "month"):
+        """
+        Initialize a DataProcessor object
+        Args:
+            process_id (int): Process ID to run
+            start_global_date (str): Start date in format YYYY-MM-DD
+            end_global_date (str): End date in format YYYY-MM-DD
+            interval (str, optional): Interval. Defaults to "month", can be "day", "month", "quarter", "semester" or "year".
+        """
         self.process_id = process_id
         self.start_global_date = start_global_date
         self.end_global_date = end_global_date
